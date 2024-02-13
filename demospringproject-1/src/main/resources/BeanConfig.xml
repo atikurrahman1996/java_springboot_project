@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="coder1" class="com.example.demo.model.Coder">
+        <property name="id" value="101" />
+        <property name="name" value="Atik and Israt" />
+        <property name="language" value="Java and JavaScript" />
+        <property name="computer" ref="computer1" />
+    </bean>
+
+    <bean id="computer1" class="com.example.demo.model.Computer">
+        <property name="brand" value="INTELL" />
+    </bean>
+
+</beans>
