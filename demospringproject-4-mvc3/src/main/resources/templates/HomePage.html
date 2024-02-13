@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+
+      <h2 th:text="${message}"></h2>
+
+	<form action="addProgrammer" method ="POST">
+
+		<h1>Programmer's Data</h1>
+
+		<h3>Enter Programmer's Id</h3>
+		<input type="text" name="pId"></input>
+
+		<h3>Enter Programmer's name</h3>
+		<input type="text" name="pName"></input>
+
+		<h3>Enter Programmer's Language</h3>
+		<input type="text" name="pLang"></input>
+
+		<button type="submit">Add Programmer</button>
+
+
+
+	</form>
+
+
+</body>
+</html>
+
+
+<!-- By Default home page send Get Request to the server and all the data are visible in the web url, so we should define request, that url data will not visible to user  -->
+
+
+
+
+
+
+
+
