@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Programmers Info Page</title>
+</head>
+<body>
+    <h2 th:text="${message}"></h2>
+    
+	<h3>All Programmer's Info</h3>
+	
+	<table>
+	
+	<tr th:each="prog:${programmers}">
+	
+	<td th:text="${prog.pId}"></td>
+	<td th:text="${prog.pName}"></td> 
+	<td th:text="${prog.pLang}"></td>     
+	
+
+	</tr>
+	
+	</table>
+
+
+</body>
+</html>
+
+<!-- using thymeleaf enhance for loop
+
+In Thymeleaf, iteration is achieved by using the th:each attribute.
+it will accept and iterate over some different data types, such as:
+
+-objects implementing java.util.Iterable 
+-objects implementing java.util.Map
+-arrays
+
+Syntext:
+
+<tr th:each="student: ${students}"> </tr>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
